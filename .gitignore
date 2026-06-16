@@ -1,0 +1,6 @@
+Dust Front RTS Demo/
+venv/
+__pycache__/
+*.pyc
+*.csv
+to_translate.json
