@@ -10,7 +10,7 @@
    <游戏目录>\Dust Front RTS_Data\resources.assets
    ```
 3. 将下载的 `resources.assets` 覆盖到同一位置
-4. 启动游戏，在**设置 → 语言**中选择 **Chinese**
+4. 启动游戏，在**语言**中选择 **Chinese**
 
 > 游戏路径（Steam）：
 > `在steam游戏列表右击-管理-浏览本地文件-双击文件夹Dust Front RTS_Data 进入-将下载的resources.assets复制并覆盖-启动游戏-选择中文`
