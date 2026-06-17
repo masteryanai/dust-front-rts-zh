@@ -12,7 +12,11 @@ import UnityPy
 
 from translations import TRANSLATIONS
 
-ASSET_PATH = "Dust Front RTS Demo/Dust Front RTS_Data/resources.assets"
+import argparse
+_parser = argparse.ArgumentParser()
+_parser.add_argument("--asset", default="Dust Front RTS Demo/Dust Front RTS_Data/resources.assets")
+_args, _ = _parser.parse_known_args()
+ASSET_PATH = _args.asset
 LOC_ASSETS = {
     "Localization_DUST_FRONT - Main",
     "Localization_DUST_FRONT - Tutorial-locals",
