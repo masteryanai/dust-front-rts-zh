@@ -133,6 +133,7 @@ TRANSLATIONS = {
     "placing-terrainNotFlat": "地形崎岖",
     "placing-otherPlans": "与其他布局冲突",
     "placing-isOutside": "超出建造区域。",
+    "placing-isOutside2": "超出建造区域。",
     "placing-onTarget": "正在放置目标：",
 
     # ── 修理 ─────────────────────────────────────────────────
@@ -774,4 +775,14 @@ TRANSLATIONS = {
     "tutorial-basic-9": "您随时可以通过点击此按钮返回教程。\n\n祝您好运。",
     "tutorial-reinforcements-0": "增援",
     "tutorial-reinforcements-1": "增援可以帮助您扭转战局。\n部队将在指定地点到达，请标记安全区域。",
+
+    # ── v1.0.3 新增 ──────────────────────────────────────────
+    "demo-currentElevation": "当前海拔",
+    "demo-elevation-x1": "普通兵力",
+    "demo-elevation-x2": "兵力强化 x2",
+    "demo-elevation-x3": "兵力强化 x3",
+    "demo-elevation-x1-Info": "敌方单位强度/生命值为常规水平。",
+    "demo-elevation-x2-Info": "敌方单位强度/生命值：x2",
+    "demo-elevation-x3-Info": "敌方单位强度/生命值：x3",
+    "selectObject": "选择目标",
 }

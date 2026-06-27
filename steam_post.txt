@@ -1,0 +1,44 @@
+[h1]Dust Front RTS Demo — 简体中文汉化补丁[/h1]
+
+覆盖全部 680 条本地化文本，包括单位、建筑、技能、教程、设置界面等。
+
+[h2]下载[/h2]
+
+前往 GitHub Release 页面下载最新版：
+https://github.com/masteryanai/dust-front-rts-zh/releases/latest
+
+下载 [b]dust-front-rts-zh-v1.0.3.zip[/b]，解压得到 [b]resources.assets[/b]。
+
+[h2]安装步骤[/h2]
+
+[olist]
+[*]在 Steam 游戏列表中右键游戏 → [b]管理[/b] → [b]浏览本地文件[/b]
+[*]进入 [b]Dust Front RTS_Data[/b] 文件夹
+[*]备份原始文件：将 [b]resources.assets[/b] 复制一份重命名为 [b]resources.assets.bak[/b]
+[*]将下载解压的 [b]resources.assets[/b] 复制到此目录并覆盖
+[*]启动游戏，在设置中将语言切换为 [b]Chinese[/b]
+[/olist]
+
+[h2]还原原版[/h2]
+
+将备份的 [b]resources.assets.bak[/b] 重命名回 [b]resources.assets[/b] 覆盖即可。
+
+[h2]翻译范围[/h2]
+
+[list]
+[*]单位 & 建筑名称与说明
+[*]技能 & 支援技能
+[*]主义 / 全局升级 / 本地装备
+[*]设置界面（音量、图形、操控等）
+[*]教程文本
+[*]任务目标 & 剧情文本
+[*]结算统计 & 天气事件
+[/list]
+
+[h2]兼容版本[/h2]
+
+Dust Front RTS Demo（适配 2026-06-24 游戏更新）
+
+[h2]源码 & 问题反馈[/h2]
+
+https://github.com/masteryanai/dust-front-rts-zh

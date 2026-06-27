@@ -15,6 +15,7 @@ from translations import TRANSLATIONS
 import argparse
 _parser = argparse.ArgumentParser()
 _parser.add_argument("--asset", default="Dust Front RTS Demo/Dust Front RTS_Data/resources.assets")
+_parser.add_argument("--force", action="store_true", help="重建已存在的 Chinese 列")
 _args, _ = _parser.parse_known_args()
 ASSET_PATH = _args.asset
 LOC_ASSETS = {
@@ -23,7 +24,7 @@ LOC_ASSETS = {
 }
 
 
-def add_chinese_column(csv_text: str) -> str:
+def add_chinese_column(csv_text: str, force: bool = False) -> str:
     reader = csv.reader(io.StringIO(csv_text))
     rows = list(reader)
     if not rows:
@@ -31,8 +32,14 @@ def add_chinese_column(csv_text: str) -> str:
 
     header = rows[0]
     if "Chinese" in header:
-        print("  Chinese column already present — skipping")
-        return csv_text
+        if not force:
+            print("  Chinese column already present — skipping")
+            return csv_text
+        # 强制模式：移除已有 Chinese 列再重建
+        zh_idx = header.index("Chinese")
+        header = [h for i, h in enumerate(header) if i != zh_idx]
+        rows = [header] + [[v for i, v in enumerate(row) if i != zh_idx] for row in rows[1:]]
+        print("  Chinese column removed, rebuilding...")
 
     out_rows = [header + ["Chinese"]]
     missing = []
@@ -78,7 +85,7 @@ def main():
         else:
             csv_text = raw
 
-        new_csv = add_chinese_column(csv_text)
+        new_csv = add_chinese_column(csv_text, force=_args.force)
         data.m_Script = new_csv
         data.save()
         patched += 1
